@@ -1,13 +1,13 @@
 function SearchBar({username, setUsername,handleSearch}){
     return(
         <div className="search">
-        <input
+        <input className="searchitem"
           type="text"
           placeholder="Enter GitHub username"
           value={username}
           onChange={(e) => setUsername(e.target.value)}>
         </input>
-        <button onClick={handleSearch}>Search</button>
+        <button className="searchitem" onClick={handleSearch}>Search</button>
         </div>
     );
 }
